@@ -3,3 +3,11 @@ def turn_count(board)
   board.each do |place| {if(place == "X" || place == "O") moves += 1 end}
   return moves
 end
+
+def current_player(board)
+  if(turn_count % 2 == 0)# is even
+    return "X"
+  else
+    return "O" #is Odd
+  end
+end
