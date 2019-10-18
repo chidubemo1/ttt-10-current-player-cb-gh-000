@@ -10,8 +10,8 @@ end
 
 def current_player(board)
   if(turn_count(board) % 2 == 0)# is even
-    return "O"
+    return "X"
   else
-    return "X" #is Odd
+    return "O" #is Odd
   end
 end
